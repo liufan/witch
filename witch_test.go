@@ -1,7 +1,7 @@
 package witch
 
 import (
-	"github.com/v2pro/plz/countlog"
+	"github.com/modern-go/countlog"
 	"math/rand"
 	"testing"
 	"time"

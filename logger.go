@@ -2,7 +2,7 @@ package witch
 
 import (
 	"fmt"
-	"github.com/v2pro/plz/countlog"
+	"github.com/modern-go/countlog"
 	"net/http"
 	"os"
 	"sync/atomic"

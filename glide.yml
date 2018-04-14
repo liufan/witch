@@ -1,4 +1,9 @@
-package: github.com/v2pro/plz
+package: github.com/liufan/witch
 import:
+- package: github.com/modern-go/countlog
+  version: origin/master
+  subpackages:
+  - output
+  - spi
 - package: github.com/json-iterator/go
   version: origin/master
