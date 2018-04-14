@@ -111,9 +111,9 @@ func Start(addr string) {
 		return
 	}
 	countlog.Info("event!witch.viewer started", "addr", addr)
-	countlog.EventWriter = output.NewEventWriter(output.EventWriterConfig{
-		Format: &json.Format{},
-		Writer: theEventQueue,
+	countlog.EventWriter = output.NewEventWriter(func(eventWriter *output.EventWriter){
+		eventWriter.Format= &json.Format{}
+		eventWriter.Writer= theEventQueue
 	})
 	if addr != "" {
 		go func() {
